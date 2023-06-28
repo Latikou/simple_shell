@@ -24,6 +24,7 @@ int is_delim(char c, char *delim)
 			return (1);
 	return (0);
 }
+
 /**
  * _isalpha - checks for alphabetic character
  * @c: The character to input
@@ -63,9 +64,11 @@ int _atoi(char *s)
 		else if (flag == 1)
 			flag = 2;
 	}
+
 	if (sign == -1)
 		output = -result;
 	else
 		output = result;
+
 	return (output);
 }
